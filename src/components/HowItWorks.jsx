@@ -1,0 +1,6 @@
+import React from 'react';
+// This illustrated guide is rendered ON THE WEBSITE, not in the chat.
+export default function HowItWorks({checkout=false}){
+ const steps=checkout?[['🛒','Review your cart','All items belong to one seller.'],['💳','Choose checkout','Try demo payment or WhatsApp enquiry.'],['🧾','Keep your order ID','Use it when speaking with the seller.'],['📦','Seller processes','Seller verifies payment before fulfilment.']]:[['🔎','Discover','Browse products from corps businesses.'],['🛍️','Add to cart','Shop from one seller per checkout.'],['💬','Pay or message','Choose demo payment or WhatsApp.'],['🤝','Support a corper','Seller reviews and fulfils your order.']];
+ return <section className="how-guide"><div className="section-head"><div><span className="eyebrow">HOW IT WORKS</span><h2>{checkout?'Your checkout journey':'Four easy steps to support a fellow corper'} ✨</h2></div></div><div className="how-steps">{steps.map(([emoji,title,detail],i)=><React.Fragment key={title}><article className="how-step"><span className="step-number">{i+1}</span><div className="step-art" aria-hidden="true">{emoji}</div><h3>{title}</h3><p>{detail}</p></article>{i<steps.length-1&&<span className="step-arrow" aria-hidden="true">→</span>}</React.Fragment>)}</div></section>
+}

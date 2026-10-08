@@ -1,0 +1,9 @@
+import React,{useState} from 'react';
+import {api} from '../services/api';
+import {money} from '../utils/shop';
+// Presentation-friendly reference lookup; production requires authentication and access control.
+export default function Orders(){
+ const [reference,setReference]=useState('');const [order,setOrder]=useState(null);const [error,setError]=useState('');const [loading,setLoading]=useState(false);
+ const lookup=async e=>{e.preventDefault();setError('');setOrder(null);const id=reference.trim().replace(/^CC-/i,'').replace(/^0+(?=\d)/,'');if(!id){setError('Enter your order reference.');return;}setLoading(true);try{setOrder(await api.getOrder(id));}catch(e){setError('Order not found. Check the reference and try again.');}finally{setLoading(false)}};
+ return <main className="shell inner-page"><div className="page-title"><span className="eyebrow">DEMO ORDER LOOKUP</span><h1>Track an order 📦</h1><p>Enter the order reference you received at checkout. This prototype is for demonstration only; a live marketplace requires secure order access.</p></div><form className="checkout-panel" onSubmit={lookup}><label>Order reference<input value={reference} onChange={e=>setReference(e.target.value)} placeholder="CC-00001" required/></label><button className="btn btn-orange full" disabled={loading}>{loading?'Looking up…':'Find order'}</button>{error&&<p role="alert">{error}</p>}</form>{order&&<article className="order-card"><div><span className="category-label">ORDER CC-{String(order.id).padStart(5,'0')}</span><h3>{order.customer}</h3><small>{new Date(order.createdAt).toLocaleString('en-NG')}</small></div><div><span className="pill">{order.paymentStatus}</span><p>{order.items?.map(i=>`${i.name} × ${i.quantity}`).join(', ')}</p><strong>{money(order.total)}</strong><p>Fulfilment: {order.fulfillmentStatus}</p></div></article>}</main>;
+}

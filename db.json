@@ -1,0 +1,232 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Bluetooth Headphones",
+      "category": "Electronics",
+      "description": "Immersive sound for your everyday soundtrack.",
+      "price": 38500,
+      "stock": 18,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80",
+      "badge": "Bestseller",
+      "tone": "peach",
+      "sellerId": "s1"
+    },
+    {
+      "id": "2",
+      "name": "Everyday Canvas Sneakers",
+      "category": "Fashion",
+      "description": "Comfy kicks that go with everything.",
+      "price": 27500,
+      "stock": 14,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80",
+      "badge": "Trending",
+      "tone": "mint",
+      "sellerId": "s2"
+    },
+    {
+      "id": "4",
+      "name": "Minimalist Wristwatch",
+      "category": "Fashion",
+      "description": "Timeless style, made for daily wear.",
+      "price": 49000,
+      "stock": 8,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80",
+      "badge": "New",
+      "tone": "yellow",
+      "sellerId": "s1"
+    },
+    {
+      "id": "5",
+      "name": "Classic Everyday Backpack",
+      "category": "Lifestyle",
+      "description": "Pack your essentials and head out.",
+      "price": 32500,
+      "stock": 12,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80",
+      "badge": "Popular",
+      "tone": "lavender",
+      "sellerId": "s2"
+    },
+    {
+      "id": "13",
+      "name": "Lip Gloss & Beauty Basket",
+      "category": "Beauty & Cosmetics",
+      "description": "Lip gloss, lip oils, lip liners and small beauty essentials in a large carry basket.",
+      "price": 5500,
+      "stock": 24,
+      "image": "/images/cosmetics-seller.webp",
+      "badge": "Corper favourite",
+      "tone": "mint",
+      "sellerId": "s2"
+    },
+    {
+      "id": "14",
+      "name": "Fresh Meat Pies (Pack of 5)",
+      "category": "Food & Drinks",
+      "description": "Golden Nigerian meat pies, individually packed in clear food-safe bags.",
+      "price": 4000,
+      "stock": 32,
+      "image": "/images/meatpie-seller.webp",
+      "badge": "Corper favourite",
+      "tone": "mint",
+      "sellerId": "s3"
+    },
+    {
+      "id": "15",
+      "name": "Bluetooth Music Box & Accessories",
+      "category": "Electronics",
+      "description": "Portable music box displayed with USB cords and charging accessories.",
+      "price": 12000,
+      "stock": 16,
+      "image": "/images/electronics-seller.webp",
+      "badge": "Corper favourite",
+      "tone": "mint",
+      "sellerId": "s1"
+    },
+    {
+      "id": "16",
+      "name": "Chilled Zobo (500ml)",
+      "category": "Food & Drinks",
+      "description": "Refreshing hibiscus drink, served chilled in sealed bottles.",
+      "price": 1500,
+      "stock": 38,
+      "image": "/images/meatpie-seller.webp",
+      "badge": "Corper favourite",
+      "tone": "mint",
+      "sellerId": "s3"
+    },
+    {
+      "id": "17",
+      "name": "Creamy Milkshake (500ml)",
+      "category": "Food & Drinks",
+      "description": "Freshly prepared milkshake; choose your favourite flavour.",
+      "price": 2500,
+      "stock": 20,
+      "image": "/images/cosmetics-seller.webp",
+      "badge": "Corper favourite",
+      "tone": "mint",
+      "sellerId": "s2"
+    },
+    {
+      "id": "18",
+      "name": "Elegant Everyday Abaya",
+      "category": "Fashion",
+      "description": "Comfortable modest abaya available in multiple sizes.",
+      "price": 18500,
+      "stock": 11,
+      "image": "/images/abaya-seller.webp",
+      "badge": "Corper favourite",
+      "tone": "mint",
+      "sellerId": "s2"
+    },
+    {
+      "id": "19",
+      "name": "Children’s Ankara Outfit",
+      "category": "Fashion",
+      "description": "Made-to-measure children’s clothing and colourful Ankara designs.",
+      "price": 9500,
+      "stock": 12,
+      "image": "/images/abaya-seller.webp",
+      "badge": "Corper favourite",
+      "tone": "mint",
+      "sellerId": "s2"
+    }
+  ],
+  "orders": [],
+  "sellers": [
+    {
+      "id": "s1",
+      "name": "Amina’s Finds",
+      "owner": "Amina Yusuf",
+      "type": "Serving corps member",
+      "verification": "approved",
+      "state": "FCT Abuja",
+      "whatsapp": "2348012345678",
+      "description": "Practical everyday essentials and gadgets."
+    },
+    {
+      "id": "s2",
+      "name": "Kemi’s Closet",
+      "owner": "Kemi Ade",
+      "type": "Serving corps member",
+      "verification": "approved",
+      "state": "Lagos",
+      "whatsapp": "2348023456789",
+      "description": "Style for workdays and weekends."
+    },
+    {
+      "id": "s3",
+      "name": "FreshStart Mart",
+      "owner": "Ibrahim Musa",
+      "type": "Approved NYSC alumnus",
+      "verification": "approved",
+      "state": "Kaduna",
+      "whatsapp": "2348034567890",
+      "description": "Food, wellness and home favourites."
+    }
+  ],
+  "listings": [
+    {
+      "id": "1",
+      "kind": "service",
+      "title": "Custom Tailoring & Abayas",
+      "description": "Custom abayas, children’s outfits and alterations. Request measurements and a quote.",
+      "price": 5000,
+      "unit": "starting from",
+      "location": "FCT Abuja",
+      "image": "/images/abaya-seller.webp",
+      "sellerId": "s2",
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "kind": "service",
+      "title": "Beauty & Event Makeup",
+      "description": "Makeup appointments and beauty consultations for events.",
+      "price": 8000,
+      "unit": "starting from",
+      "location": "FCT Abuja",
+      "image": "/images/cosmetics-seller.webp",
+      "sellerId": "s2",
+      "status": "available"
+    },
+    {
+      "id": "3",
+      "kind": "service",
+      "title": "Gadget Setup & Support",
+      "description": "Bluetooth speakers, accessories, device setup and technical help.",
+      "price": 3000,
+      "unit": "starting from",
+      "location": "Kaduna",
+      "image": "/images/electronics-seller.webp",
+      "sellerId": "s1",
+      "status": "available"
+    },
+    {
+      "id": "4",
+      "kind": "accommodation",
+      "title": "Self-contained Apartment",
+      "description": "Illustrative room advert. Confirm availability, agent identity and inspect before paying.",
+      "price": 250000,
+      "unit": "per year",
+      "location": "FCT Abuja",
+      "image": "/images/apartment.webp",
+      "sellerId": "s1",
+      "status": "available"
+    },
+    {
+      "id": "5",
+      "kind": "accommodation",
+      "title": "Shared Flat / Room",
+      "description": "Illustrative shared accommodation listing. Arrange a viewing before paying.",
+      "price": 120000,
+      "unit": "per year",
+      "location": "Kaduna",
+      "image": "/images/apartment.webp",
+      "sellerId": "s3",
+      "status": "available"
+    }
+  ],
+  "enquiries": []
+}

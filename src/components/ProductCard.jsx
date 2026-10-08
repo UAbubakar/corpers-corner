@@ -1,0 +1,4 @@
+import React from 'react';
+import {Plus,Check,ShieldCheck} from 'lucide-react';
+import {money} from '../utils/shop';
+export default function ProductCard({product,onAdd,inCart,seller}){return <article className="product-card"><div className={`product-image tone-${product.tone}`}><img src={product.image} alt={product.name} loading="lazy"/><span className="tag">{product.badge}</span></div><div className="product-info"><span className="category-label">{product.category}</span><h3>{product.name}</h3><p>{product.description}</p><div className="seller-line"><ShieldCheck size={15}/> {seller?.name||'Seller'} · {seller?.state||'Nigeria'}</div><div className="product-footer"><div><strong>{money(product.price)}</strong><small>{product.stock} in stock</small></div><button className="add-button" onClick={()=>onAdd(product)} disabled={product.stock<=0} aria-label={`Add ${product.name} to cart`}>{inCart?<Check size={18}/>:<Plus size={18}/>}</button></div></div></article>}
